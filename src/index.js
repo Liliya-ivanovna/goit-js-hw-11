@@ -11,7 +11,7 @@ let totalValues;
 let inputValue='';
 let page; 
 let searchQuery = '';
-
+let perPage;
  async function onFormSubmit(evt) {
   evt.preventDefault();
   inputValue = inputEl.value;
