@@ -1,6 +1,6 @@
 import axios from 'axios';
 import Notiflix from 'notiflix';
-
+let perPage;
 function getApi(inputValue, page) {
     perPage = 40;
     const urlAPI = 'https://pixabay.com/api/?';
