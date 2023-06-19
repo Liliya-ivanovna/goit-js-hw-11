@@ -77,9 +77,7 @@ function makeMarkup(responseData) {
   });
   window.scrollTo(0, 0)
    }
-   document.addEventListener('DOMContentLoaded', function() {
-    lightbox = new SimpleLightbox('.photo-card a');
-  });
+ 
  async function onFormSubmit(evt) {
   evt.preventDefault();
   inputValue = inputEl.value;
@@ -143,6 +141,8 @@ function onWindowScroll() {
 }
 
 window.addEventListener('scroll', onWindowScroll);
-
+document.addEventListener('DOMContentLoaded', function() {
+  lightbox = new SimpleLightbox('.photo-card a');
+});
 
 
