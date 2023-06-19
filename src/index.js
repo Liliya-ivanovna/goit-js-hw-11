@@ -3,8 +3,7 @@ import Notiflix from 'notiflix';
 import axios from 'axios';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
-import {getRequest} from './js/api';
-import { makeMarkup } from './js/gallery';
+
 const galleryWrapper=document.querySelector('.gallery');
 const formEl = document.querySelector('form');
 const inputEl =document.querySelector('input');
