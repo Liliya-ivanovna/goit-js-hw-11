@@ -9,7 +9,7 @@ const formEl = document.querySelector('form');
 const inputEl =document.querySelector('input');
 let totalValues;
 let inputValue='';
-let page; 
+let page=1; 
 let searchQuery = '';
 let perPage;
 let lightbox;
