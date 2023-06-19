@@ -32,7 +32,7 @@ let searchQuery = '';
             Notiflix.Report.success(`Hooray! We found ${responseData.data.totalHits} images.`)
           }
       } catch (error) {inputEl.value = '';
-        Notiflix.Report.failure("ERROR request!Please,try again!");
+        Notiflix.Report.failure(error.message,"ERROR request!Please,try again!");
         
   }}
 };
