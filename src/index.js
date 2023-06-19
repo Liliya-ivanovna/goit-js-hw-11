@@ -14,7 +14,7 @@ let searchQuery = '';
 let perPage;
 let lightbox;
 function getApi(inputValue, page) {
-  let  perPage = 40;
+perPage = 40;
   const urlAPI = 'https://pixabay.com/api/?';
   const searchParams = new URLSearchParams({
       key: '37210497-313bcce70e0ab9e64eed10137',
