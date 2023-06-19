@@ -28,13 +28,12 @@ perPage = 40;
   });
 return urlAPI + searchParams.toString();
 }
- export async function getRequest(inputValue, page) {
+async function getRequest(inputValue, page) {
   const url = getApi(inputValue, page);
- 
-  return axios.get(url).then(response => response).catch(error => Notiflix.Notify.warning(error))
+ return axios.get(url).then(response => response).catch(error => Notiflix.Notify.warning(error))
 }
 
-export function makeMarkup(responseData) {
+function makeMarkup(responseData) {
     let gallery = responseData.data.hits.map(item => {
       let galleryItem = document.createElement('div');
       galleryItem.className = 'photo-card';
