@@ -1,6 +1,5 @@
 
 import Notiflix from 'notiflix';
-import axios from 'axios';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 import {getRequest} from './js/api';
@@ -12,7 +11,7 @@ let totalValues;
 let inputValue='';
 let page; 
 let searchQuery = '';
-
+let perPage;
  async function onFormSubmit(evt) {
   evt.preventDefault();
   inputValue = inputEl.value;
