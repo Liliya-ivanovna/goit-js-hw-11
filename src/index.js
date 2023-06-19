@@ -1,5 +1,6 @@
 
 import Notiflix from 'notiflix';
+import axios from 'axios';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 import {getRequest} from './js/api';
@@ -56,7 +57,7 @@ async function loadMoreImages() {
     makeMarkup(responseData);
     totalValues = responseData.data.totalHits;
   } catch (error) {
-    Notiflix.Notify.failure(error.message);
+    Notiflix.Report.failure(error.message,"ERROR!");
   } finally {
     isLoading = false;
     window.scrollTo(0, previousScrollTop);
